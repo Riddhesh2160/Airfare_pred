@@ -2,7 +2,7 @@ import pandas as pd
 
 
 class Data_Cleaning:    
-    def readFile():
+    def readFile(self):
 
         df = pd.read_csv(r"C:/Users/riddh/OneDrive/Desktop/Data_Ana_proj/Data/Airline1.csv")
         return df
@@ -67,6 +67,6 @@ class Data_Cleaning:
         return df
 
     def SaveFile(self,df):
-        df.to_csv("Airtifact/Clnd_Data/Cleaned_Data.csv",index=False)
+        df.to_csv("Airtifacts/Clnd_Data/Cleaned_Data.csv",index=False)
         return df
 
